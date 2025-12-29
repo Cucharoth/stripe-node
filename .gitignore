@@ -1,6 +1,6 @@
 node_modules
-cjs
-esm
+/cjs
+/esm
 .npm-debug.log
 tags
 .nyc_output

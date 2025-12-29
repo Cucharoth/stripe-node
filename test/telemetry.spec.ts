@@ -103,7 +103,7 @@ describe('Client Telemetry', () => {
     };
     const {host, port} = await createTestServer(handle);
     const stripe = require('../src/stripe.cjs.node.js')(
-      'sk_test_FEiILxKZwnmmocJDUjUNO6pa',
+      'sk_test_replacement_token',
       {
         telemetry: true,
         host,
@@ -148,7 +148,7 @@ describe('Client Telemetry', () => {
 
     const {host, port} = await createTestServer(handle);
     const stripe = require('../src/stripe.cjs.node.js')(
-      'sk_test_FEiILxKZwnmmocJDUjUNO6pa',
+      'sk_test_replacement_token',
       {
         telemetry: true,
         host,
@@ -200,7 +200,7 @@ describe('Client Telemetry', () => {
     };
     const {host, port} = await createTestServer(handle);
     const stripe = require('../src/stripe.cjs.node.js')(
-      'sk_test_FEiILxKZwnmmocJDUjUNO6pa',
+      'sk_test_replacement_token',
       {
         telemetry: true,
         host,
