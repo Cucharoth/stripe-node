@@ -236,7 +236,7 @@ describe('utils', () => {
       });
       expect(args.length).to.equal(0);
       expect(options.authenticator._apiKey).to.equal(
-        'sk_test_replacement_token'
+        'sk_test_iiiiiiiiiiiiiiiiiiiiiiii'
       );
     });
 
@@ -290,7 +290,7 @@ describe('utils', () => {
       const args = [
         {foo: 'bar'},
         {
-          apiKey: 'sk_test_replacement_token',
+          apiKey: 'sk_test_iiiiiiiiiiiiiiiiiiiiiiii',
           idempotencyKey: 'foo',
           apiVersion: '2010-01-10',
         },
@@ -307,14 +307,14 @@ describe('utils', () => {
       });
       expect(args.length).to.equal(1);
       expect(options.authenticator._apiKey).to.equal(
-        'sk_test_replacement_token'
+        'sk_test_iiiiiiiiiiiiiiiiiiiiiiii'
       );
     });
 
     it('parses an idempotency key and api key and api version', () => {
       const args = [
         {
-          apiKey: 'sk_test_replacement_token',
+          apiKey: 'sk_test_iiiiiiiiiiiiiiiiiiiiiiii',
           idempotencyKey: 'foo',
           apiVersion: 'hunter2',
         },
@@ -331,7 +331,7 @@ describe('utils', () => {
       });
       expect(args.length).to.equal(0);
       expect(options.authenticator._apiKey).to.equal(
-        'sk_test_replacement_token'
+        'sk_test_iiiiiiiiiiiiiiiiiiiiiiii'
       );
     });
 
@@ -358,7 +358,7 @@ describe('utils', () => {
       const args = [
         {foo: 'bar'},
         {
-          apiKey: 'sk_test_replacement_token',
+          apiKey: 'sk_test_iiiiiiiiiiiiiiiiiiiiiiii',
           idempotencyKey: 'foo',
           apiVersion: '2010-01-10',
           fishsticks: true,
